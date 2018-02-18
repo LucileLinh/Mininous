@@ -1,0 +1,42 @@
+<div class="row" id="games_page">
+  <div id="memoryGame_menu">
+    <div class="title" id="page_title_orange">
+      <h2>Let's play a memory game</h2>
+    </div>
+    <div class="title" id="theme_title">
+      <h3>Select a theme</h3>
+    </div>
+
+    <app-themes></app-themes>
+
+    <div class="title" id="level_title">
+      <h3>Select a level:</h3>
+    </div>
+    <div id="level">
+      <button class="btn btn-default btn-lg" a href="#level" type="button" onclick="setSize(6,'L')">Easy</button>
+      <button class="btn btn-default btn-lg" a href="#level" type="button" onclick="setSize(12,'M')">Intermediate</button>
+      <button class="btn btn-default btn-lg" a href="#level" type="button" onclick="setSize(24,'S')">Difficule</button>
+    </div>
+  </div>
+
+  <div id="memory_board">
+    <script>
+      genTab();
+    </script>
+  </div>
+
+  <!-- <div class="row">
+    <div id="boxMsg">
+      <h2>Bravo!</h2>
+      <p>You win!</p>
+      <p>You've received
+        <span>1</span>
+        <span>pink balloon
+        </span>
+      </p>
+      <button class="btn btn-default btn-lg" id="butt1" onclick="restartGame();">Restart</button>
+      <button class="btn btn-default btn-lg" onclick="hideById('boxMsg');">Close</button>
+      <p>Collect more balloons to get gifts!</p>
+    </div>
+  </div> -->
+</div>

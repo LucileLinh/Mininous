@@ -1,0 +1,57 @@
+#Mininous_header {
+  background-color: #66ccff;
+  padding-top: 1rem;
+}
+
+#identify_zone {
+  height: 150px;
+  text-align: right;
+  background: url(../../assets/images/nuageLog.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+#identify_field {
+  margin-right: 10px;
+}
+
+#social_icon_zone {
+  height: 120px;
+  background: url(../../assets/images/nuageSearch.png) 100%;
+  background-position: top center;
+  background-size: 390px 120px;
+  background-repeat: no-repeat;
+}
+
+#social_icon_zone > div {
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#social_icon_zone > div:hover {
+  animation-name: rotateZExample;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes rotateZExample {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  20% {
+    transform: rotateZ(15deg);
+  }
+  40% {
+    transform: rotateZ(15deg);
+  }
+  60% {
+    transform: rotateZ(-25deg);
+  }
+  80% {
+    transform: rotateZ(-25deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}

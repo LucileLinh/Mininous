@@ -1,0 +1,27 @@
+#main_page {
+  background-color: #66ccff;
+}
+
+#mininous_Panel {
+  height: 150px;
+  background: linear-gradient(#3333cc, #ff6666, #ffcc66, #66ccff);
+}
+
+.horizontal-animate {
+  position: relative;
+  -webkit-animation: horizontalmove 6s;
+  /* Chrome, Safari, Opera */
+  animation: horizontalmove 6s;
+}
+
+.page-title {
+  margin: 0 auto 0;
+  padding: 0 auto 0;
+  height: 120px;
+  text-align: center;
+}
+
+.page-title > h2 {
+  text-align: center;
+  padding-top: 70px;
+}

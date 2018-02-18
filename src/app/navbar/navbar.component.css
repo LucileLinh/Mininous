@@ -1,0 +1,65 @@
+#nav_bar {
+  height: 190px;
+  background: #66ccff url(../../assets/images/nuageNavbar.png) 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+#nav_bar > div {
+  height: 190px;
+}
+
+.nav-icon {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  -webkit-transition: top 0.3s ease-in-out 0s;
+  transition: top 0.3s ease-in-out 0s;
+}
+
+h2.nav-text {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: 700;
+}
+
+.nav-icon:hover {
+  top: 0px;
+}
+
+.nav-icon:active {
+  top: 0px;
+}
+
+#icon1 {
+  background: url(../../assets/images/inventory_icon.png) 100%;
+  background-repeat: no-repeat;
+}
+
+#icon2 {
+  background: url(../../assets/images/tv_icon.png) 100%;
+  background-repeat: no-repeat;
+}
+
+#icon3 {
+  background: url(../../assets/images/3.png) 100%;
+  background-repeat: no-repeat;
+}
+
+#icon4 {
+  background: url(../../assets/images/learning_icon.png) 100%;
+  background-repeat: no-repeat;
+}
+
+#icon5 {
+  background: url(../../assets/images/fairytail_icon.png) 100%;
+  background-repeat: no-repeat;
+}
+
+#main_page {
+  background-color: #66ccff;
+}

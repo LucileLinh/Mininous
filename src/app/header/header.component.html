@@ -1,0 +1,112 @@
+<div class="row" id="Mininous_header">
+  <div id="logo" class="col-md-3">
+    <a href="index.php">
+      <img src="assets/images/logoMininous.png" />
+    </a>
+  </div>
+  <div id="social_icon_zone" class="col-md-6">
+    <div class="col-md-2 col-md-push-8">
+      <a href="underConstruction.php">
+        <img src="assets/images/g.png" height="40px" />
+      </a>
+      <h5 class="italic">Gallery Mininous</h5>
+    </div>
+    <div class="col-md-2">
+      <a href="underConstruction.php">
+        <img src="assets/images/enveloppe.png" height="40px" />
+      </a>
+      <h5 class="italic">Support Mininous</h5>
+    </div>
+    <div class="col-md-2">
+      <a href="underConstruction.php">
+        <img src="assets/images/blog.png" height="40px" />
+      </a>
+      <h5 class="italic">Mininous Blog</h5>
+    </div>
+    <div class="col-md-2">
+      <a href="underConstruction.php">
+        <img src="assets/images/cuisine.png" height="40px" />
+      </a>
+      <h5 class="italic">Mininous cookbook</h5>
+    </div>
+  </div>
+  <div id="identify_zone" class="col-md-2">
+    <a>
+      <h4 data-toggle="modal" data-target="#signIn">Sign In</h4>
+    </a>
+    <p>Not yet member?</p>
+    <h5>
+      <a href="signUpForm.php">Sign Up,</a>
+      <span> it's FREE</span>
+    </h5>
+  </div>
+</div>
+
+
+<!--Sign In Modal -->
+<div class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true" id="signIn">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title" id="gridSystemModalLabel">Sign In Form</h3>
+      </div>
+
+      <div class="modal-body">
+        <div class="container-fluid">
+          <form name="" onsubmit="return false;" method="POST">
+
+            <div class="row" id="signIn_form_l01">
+              <div class="col-sm-5" id="signIn_form_l01_label">
+                <p>My Identify:</p>
+              </div>
+              <div class="col-sm-7" id="signIn_form_l01_identify">
+                <input id="signIn_identify" type="text" name="signIn_identify" maxlength="64" onkeyup="restrict(this)" onfocus="emptyElement('signIn_status')"
+                />
+              </div>
+            </div>
+
+            <div class="row" id="signIn_form_l02">
+              <div class="col-sm-5" id="signIn_form_l02_label">
+                <p>My Password:</p>
+              </div>
+              <div class="col-sm-7" id="signIn_form_l02_password">
+                <input id="signIn_password" type="password" name="password" onfocus="emptyElement('signIn_status')" />
+              </div>
+            </div>
+
+            <p class="red" id="signIn_status"> </p>
+
+            <div id="log_in_memo">
+              <input type="checkbox" id="rememberMe" name="rememberMe" />
+              <label for="rememberMe">Remember me</label>
+              <br/>
+              <button class="btn btn-primary btn-lg" id="signInBtn" onclick="signIn('signIn_identify','signIn_password','rememberMe','signIn_status')">Log In</button>
+            </div>
+
+            <hr>
+            <div id="password_reset">
+              <p>I forgot my password?
+                <a href="../../Mininous/forgotPwForm.php">Click here to reset!</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <p>Not yet member?
+          <button type="button" class="btn btn-primary">
+            <a href="signUpForm.php">Sign Up</a>
+          </button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Quit</button>
+        </p>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

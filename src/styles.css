@@ -1,1 +1,122 @@
-/* You can add global styles to this file, and also import other style files */
+/* orange:#ff9933, yellow:#ffcc66 dark-blue:#3333cc light-blue:#66CCFF red:#cc0000 green:#33cc33;
+* font-family: 'Cabin Sketch', cursive; //style dessin 'Verdana'
+*
+*/
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  margin: auto;
+  font-family: 'Verdana', cursive;
+  margin: 10px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Cabin Sketch';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin Sketch Regular'), local('CabinSketch-Regular'),
+    url(assets/fonts/cabinsketch/CabinSketch-Regular.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+    U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Cabin Sketch';
+  font-style: normal;
+  font-weight: 700;
+  src: local('CabinSketch Bold'), local('CabinSketch-Bold'),
+    url(assets/fonts/cabinsketch/CabinSketch-Bold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+    U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: #3333cc;
+}
+
+.orange {
+  color: #ff9933;
+}
+
+.green {
+  color: #33cc33;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.white {
+  color: #ffffff;
+}
+
+i.tiny {
+  font-size: 1em;
+}
+
+i.small {
+  font-size: 1.5em;
+}
+
+i.medium {
+  font-size: 4em;
+}
+
+i.large {
+  font-size: 6em;
+}
+
+ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+body div {
+  text-align: center;
+}
+
+button {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 20px;
+}
+
+.btn-yellow {
+  background-color: #ffcc68;
+}
+
+.btn-orange {
+  background-color: #ff9933;
+}
+
+.btn-blue {
+  background-color: #3333cc;
+}
+
+a.btn {
+  color: black;
+}
+
+.btn-primary > a,
+.btn-primary > p,
+a.btn-primary {
+  color: white;
+}
