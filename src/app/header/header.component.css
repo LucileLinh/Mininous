@@ -15,6 +15,10 @@
   margin-right: 10px;
 }
 
+#sign-in {
+  cursor: pointer;
+}
+
 #social_icon_zone {
   height: 120px;
   background: url(../../assets/images/nuageSearch.png) 100%;
