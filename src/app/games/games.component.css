@@ -12,30 +12,6 @@
   border-radius: 50%;
 }
 
-#memory_board {
-  width: 860px;
-  height: 650px;
-  border: 1px solid #cc6633;
-  background-color: #99ccff;
-  padding: 30px;
-  margin: auto;
-}
-
-#memory_board > div {
-  text-align: left;
-  margin: 10px;
-  float: left;
-}
-
-#memory_board > div > img {
-  text-align: center;
-  position: absolute;
-  border: 1px solid #cc6633;
-  border-radius: 15px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
-  cursor: pointer;
-}
-
 .horizontal-animate {
   position: relative;
   animation: horizontalmove 6s;
@@ -74,42 +50,6 @@
   padding-top: 20px;
 }
 
-#memory_board > div > .backCard {
-  transform: perspective(600px) rotateY(0deg);
-  backface-visibility: hidden;
-  transition: -webkit-transform 0.3s linear 0s;
-  transition: -ms-transform 0.3s linear 0s;
-  transition: -moz-transform 0.3s linear 0s;
-  transition: transform 0.3s linear 0s;
-}
-
-#memory_board > div > .frontCard {
-  transform: perspective(600px) rotateY(180deg);
-  backface-visibility: hidden;
-  transition: -webkit-transform 0.3s linear 0s;
-  transition: -ms-transform 0.3s linear 0s;
-  transition: -moz-transform 0.3s linear 0s;
-  transition: transform 0.3s linear 0s;
-}
-
-.flip3D_L,
-.flip3D_L > img {
-  height: 244px;
-  width: 244px;
-}
-
-.flip3D_M,
-.flip3D_M > img {
-  height: 178px;
-  width: 178px;
-}
-
-.flip3D_S,
-.flip3D_S > img {
-  height: 111px;
-  width: 111px;
-}
-
 #boxMsg {
   position: absolute;
   top: 860px;
@@ -119,6 +59,6 @@
   text-align: center;
   border: 1px solid #cc6633;
   border-radius: 15px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   visibility: hidden;
 }

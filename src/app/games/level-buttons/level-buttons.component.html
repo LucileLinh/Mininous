@@ -1,0 +1,5 @@
+<div class="row level-buttons">
+  <span *ngFor="let level of levels">
+    <button [ngClass]="{'selected' : level.id===selectedLevelId}" class="btn btn-default btn-lg" type="button" (click)="setLevel(level)">{{level.title}}</button>
+  </span>
+</div>

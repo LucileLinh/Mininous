@@ -1,6 +1,6 @@
 # Mininous
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
+Migration of mininous.net website to Angular5 ⚠️Project under development ! ⚠️
 
 ## Development server
 

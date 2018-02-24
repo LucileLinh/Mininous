@@ -5,3 +5,8 @@
 .img-circle {
   border-radius: 50%;
 }
+
+.selected {
+  border: 3px solid orange;
+  border-radius: 50%;
+}

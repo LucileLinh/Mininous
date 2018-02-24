@@ -14,6 +14,9 @@ import { LearningComponent } from "./learning/learning.component"
 import { StoriesComponent } from "./stories/stories.component"
 import { InventoryComponent } from "./inventory/inventory.component"
 import { ThemesComponent } from "./shared/themes/themes.component"
+import { MemoryGameComponent } from "./games/memory-game/memory-game.component"
+import { LevelButtonsComponent } from "./games/level-buttons/level-buttons.component";
+import { CardComponent } from './games/memory-game/card/card.component'
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { ThemesComponent } from "./shared/themes/themes.component"
     StoriesComponent,
     InventoryComponent,
     ThemesComponent,
+    MemoryGameComponent,
+    LevelButtonsComponent,
+    CardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

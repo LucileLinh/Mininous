@@ -1,5 +1,5 @@
 export class Theme {
-  id: String
-  title: String
-  img: String
+  id: string
+  title: string
+  img: string
 }

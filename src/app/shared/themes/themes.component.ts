@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core"
+import { Component, OnInit, Output, EventEmitter } from "@angular/core"
 import { THEMES } from "../mock-themes"
 import { Theme } from "../theme"
 
@@ -8,14 +8,17 @@ import { Theme } from "../theme"
   styleUrls: ["./themes.component.css"],
 })
 export class ThemesComponent implements OnInit {
-  themes = THEMES
-  selectedTheme: Theme
-  onSelect(theme: Theme, selectTheme: Function): void {
-    this.selectedTheme = theme
-    selectTheme(this.selectedTheme)
+  themes: Array<Theme>
+  selectedId: string
+  @Output() onSelectTheme: EventEmitter<Theme> = new EventEmitter()
+
+  selectTheme(theme: Theme) {
+    this.selectedId = theme.id
+    this.onSelectTheme.emit(theme)
   }
 
-  constructor() {}
-
-  ngOnInit() {}
+  ngOnInit() {
+    this.themes = THEMES
+    this.selectedId = THEMES[1].id
+  }
 }

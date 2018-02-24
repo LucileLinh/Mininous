@@ -7,26 +7,19 @@
       <h3>Select a theme</h3>
     </div>
 
-    <app-themes></app-themes>
+    <app-themes (onSelectTheme)="selectTheme($event)"></app-themes>
 
     <div class="title" id="level_title">
       <h3>Select a level:</h3>
     </div>
-    <div id="level">
-      <button class="btn btn-default btn-lg" a href="#level" type="button" onclick="setSize(6,'L')">Easy</button>
-      <button class="btn btn-default btn-lg" a href="#level" type="button" onclick="setSize(12,'M')">Intermediate</button>
-      <button class="btn btn-default btn-lg" a href="#level" type="button" onclick="setSize(24,'S')">Difficule</button>
-    </div>
+
+    <app-level-buttons (onSelectLevel)="setLevel($event)"></app-level-buttons>
   </div>
 
-  <div id="memory_board">
-    <script>
-      genTab();
-    </script>
-  </div>
+  <app-memory-game [theme]="theme" [level]="level"></app-memory-game>
 
-  <!-- <div class="row">
-    <div id="boxMsg">
+  <!-- <div class="row ">
+    <div id="boxMsg ">
       <h2>Bravo!</h2>
       <p>You win!</p>
       <p>You've received
@@ -34,8 +27,8 @@
         <span>pink balloon
         </span>
       </p>
-      <button class="btn btn-default btn-lg" id="butt1" onclick="restartGame();">Restart</button>
-      <button class="btn btn-default btn-lg" onclick="hideById('boxMsg');">Close</button>
+      <button class="btn btn-default btn-lg " id="butt1 " onclick="restartGame(); ">Restart</button>
+      <button class="btn btn-default btn-lg " onclick="hideById( 'boxMsg'); ">Close</button>
       <p>Collect more balloons to get gifts!</p>
     </div>
   </div> -->
