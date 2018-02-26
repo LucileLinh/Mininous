@@ -9,7 +9,7 @@
 
 #memory_board > div {
   text-align: left;
-  margin: 130px;
+  margin: 10px;
   float: left;
 }
 
@@ -36,14 +36,10 @@
 
 .front-flip {
   transform: perspective(600px) rotateY(0deg);
-  backface-visibility: hidden;
-  transition: transform 0.3s linear 0s;
 }
 
 .back-flip {
   transform: perspective(600px) rotateY(-180deg);
-  backface-visibility: hidden;
-  transition: transform 0.3s linear 0s;
 }
 
 .flip3D_L,
@@ -74,22 +70,4 @@
   transform: perspective(600px) rotateY(180deg);
   backface-visibility: hidden;
   transition: transform 0.3s linear 0s;
-}
-
-.flip3D_L,
-.flip3D_L > img {
-  height: 244px;
-  width: 244px;
-}
-
-.flip3D_M,
-.flip3D_M > img {
-  height: 178px;
-  width: 178px;
-}
-
-.flip3D_S,
-.flip3D_S > img {
-  height: 111px;
-  width: 111px;
 }

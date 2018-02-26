@@ -1,0 +1,9 @@
+<p>
+  card works!
+</p>
+
+<div *ngFor="let card of cards" class="flip3D_${cardSize}`" id="`backCard-${card.id}`">
+  <img class="back-card" id="backcard-${card.id}" src="Images/dos.png" alt="card.id">
+  <img class="front-card" id="frontcard-${card.id}" src="card.imgSrc" alt="card.id">
+  <audio src="card.audioSrc" play="playSound(card)"></audio>
+</div>

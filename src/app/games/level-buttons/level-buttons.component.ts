@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from "@angular/core"
 
-import levels from "../games.constant"
+import { LEVELS } from "../games.constant"
 
 @Component({
   selector: "app-level-buttons",
@@ -14,12 +14,11 @@ export class LevelButtonsComponent implements OnInit {
 
   setLevel(level) {
     this.selectedLevelId = level.id
-    console.log(level)
     this.onSelectLevel.emit(level)
   }
 
   ngOnInit() {
-    this.levels = levels
-    this.selectedLevelId = levels[0].id
+    this.levels = LEVELS
+    this.selectedLevelId = LEVELS[0].id
   }
 }

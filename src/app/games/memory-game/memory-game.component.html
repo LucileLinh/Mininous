@@ -1,7 +1,7 @@
 <div id="memory_board">
-  <div *ngFor="let card of cards" class="flip3D_${cardSize}`" id="`backCard-${card.id}`">
-    <img class="front-card" id="`frontcard-${card.id}`" src="{{card.imgSrc}}" alt="card.id">
-    <img class="back-card" id="`backcard-${card.id}`" src="assets/images/dos.png" alt="card" (click)="flipOn(card)">
+  <div *ngFor="let card of cards" class="{{'flip3D_' + cardSize}}" id="card-{{card.id}}" (click)="play(card)">
+    <img class="front-card" src="{{card.imgSrc}}" alt="{{card.id}}">
+    <img class="back-card" src="assets/images/dos.png" alt="{{card.id}}">
     <audio src="{{card.audioSrc}}" play="playSound(card)"></audio>
   </div>
 </div>

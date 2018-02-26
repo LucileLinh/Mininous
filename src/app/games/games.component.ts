@@ -4,8 +4,8 @@ import { ThemesComponent } from "../shared/themes/themes.component"
 import { MemoryGameComponent } from "./memory-game/memory-game.component"
 import { LevelButtonsComponent } from "./level-buttons/level-buttons.component"
 import { Theme } from "../shared/theme"
-import { THEMES } from "../shared/mock-themes"
-import levels from "./games.constant"
+import { THEMES } from "../shared/themes/themes.constant"
+import { LEVELS } from "./games.constant"
 
 @Component({
   selector: "app-games",
@@ -13,8 +13,8 @@ import levels from "./games.constant"
   styleUrls: ["./games.component.css"],
 })
 export class GamesComponent implements OnInit {
-  private level: any
-  private theme: Theme
+  private level = LEVELS[0]
+  private theme = THEMES[1]
 
   selectTheme(theme): void {
     this.theme = theme
@@ -24,8 +24,5 @@ export class GamesComponent implements OnInit {
     this.level = level
   }
 
-  ngOnInit() {
-    this.level = levels[0]
-    this.theme = THEMES[1]
-  }
+  ngOnInit() {}
 }

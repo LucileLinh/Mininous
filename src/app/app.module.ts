@@ -15,8 +15,7 @@ import { StoriesComponent } from "./stories/stories.component"
 import { InventoryComponent } from "./inventory/inventory.component"
 import { ThemesComponent } from "./shared/themes/themes.component"
 import { MemoryGameComponent } from "./games/memory-game/memory-game.component"
-import { LevelButtonsComponent } from "./games/level-buttons/level-buttons.component";
-import { CardComponent } from './games/memory-game/card/card.component'
+import { LevelButtonsComponent } from "./games/level-buttons/level-buttons.component"
 
 @NgModule({
   declarations: [
@@ -34,7 +33,6 @@ import { CardComponent } from './games/memory-game/card/card.component'
     ThemesComponent,
     MemoryGameComponent,
     LevelButtonsComponent,
-    CardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

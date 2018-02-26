@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from "@angular/core"
-import { THEMES } from "../mock-themes"
+import { THEMES } from "../../shared/themes/themes.constant"
 import { Theme } from "../theme"
 
 @Component({
