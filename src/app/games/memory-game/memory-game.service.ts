@@ -4,45 +4,6 @@ import { LEVELS } from "../games.constant.js"
 
 @Injectable()
 export class MemoryGameService {
-  // play(card, previous) {
-  //   let flippedOn = false
-  //   if (!flippedOn && flippedCards.length <2 ) {
-  //     flipOn(card)
-  //     playAudio(card)
-  //     if (flippedCards.length < 2) {
-  //       flippedCards.push(card)
-  //       if (flippedCards.length === 2 ) {
-  //         if (flippedCards[0].id == flippedCards[1].id) {
-  //           cardsFound += 2;
-  //         }
-  //         if (cardsFound == allCards.length) {
-  //           setTimeout(showMsg, 500);
-  //           playAudioCheering();
-  //         }
-  //       }
-  //     } else {
-  //       setTimeout(flippedOffAll(flippedCards), 1000)
-  //     }
-  //   }
-  // }
-  // flippOff(card1, card2)
-  // }
-  play(card, previous, cardsFound, total) {
-    if (!previous) {
-      this.flippOn(card)
-      previous = card
-    } else {
-      if (card.id === previous.id) {
-        cardsFound += 2
-        if (cardsFound === total) {
-          this.playCheeringAudio()
-        }
-      } else {
-        setTimeout(this.flippOff, 1000)
-      }
-    }
-  }
-
   flippOn(card) {
     const front = card.firstChild
     const back = front.nextSibling
@@ -66,7 +27,7 @@ export class MemoryGameService {
     el.lastChild[0].play()
   }
 
-  playCheeringAudio() {
+  playCheeringAudio(cheeringAudio) {
     cheeringAudio.play()
   }
 }
